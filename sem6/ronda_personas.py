@@ -8,8 +8,8 @@ giro = "horario"
 
 
 if (config.LIMITE_CUENTA >= config.PERSONAS):
-    # for ciclo in range(config.LIMITE_CUENTA):
-    while (cuenta < config.LIMITE_CUENTA):
+    for ciclo in range(config.LIMITE_CUENTA):
+    # while (cuenta < config.LIMITE_CUENTA):
         cuenta = cuenta + 1 # se aumenta en 1 contador general
 
         if (giro == "horario"):
