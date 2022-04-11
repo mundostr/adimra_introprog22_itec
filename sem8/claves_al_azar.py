@@ -3,7 +3,7 @@ import random, string
 
 
 # Constantes y variables
-CTD_CLAVES = 5
+CTD_CLAVES = 3
 CTD_CARACTERES = 8
 
 apellido = "Perren"
@@ -19,6 +19,6 @@ for i in range(CTD_CLAVES):
     for c in range(CTD_CARACTERES):
         # caracter_al_azar = random.choice("abcdefghijklmnopqrstuvwxyz")
         caracter_al_azar = random.choice(string.ascii_letters + string.digits)
-        clave = clave + caracter_al_azar
+        clave = clave + caracter_al_azar # concatenar
     
     print(clave)
