@@ -12,14 +12,11 @@ Criterios:
 # 5) La clave debe tener al menos un caracter especial.
 """
 
+# Librerías y configs
+import config, string
+
 
 # Constantes y variables
-CARACTERES_MINIMOS = 8
-CADENA_MAYUSCULAS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-CADENA_MINUSCULAS = "abcdefghijklmnopqrstuvwxyz"
-DIGITOS = "0123456789"
-CARACTERES_ESPECIALES = "@#$&_-"
-
 clave = "" # variable global
 clave_valida = False
 
@@ -28,6 +25,7 @@ clave_valida = False
 def solicitar_clave():
 	global clave
 	
+	print()
 	print("La clave debe tener longitud mínima de 8 caracteres, mezclar mayúsculas, minúsculas, dígitos y caracteres especiales.")
 	print("Caracteres especiales válidos: @#$&_-")
 
@@ -45,32 +43,37 @@ def verificar_clave():
 	
 	clave_valida = False
 
-	if (len(clave) >= CARACTERES_MINIMOS):
+	if (len(clave) >= config.CARACTERES_MINIMOS):
 		longitud_ok = True
 	
 	for caracter in clave:
-		if (caracter in CADENA_MAYUSCULAS):
+		if (caracter in config.CADENA_MAYUSCULAS):
 			mayusculas_ok = True
 		
-		if (caracter in CADENA_MINUSCULAS):
+		if (caracter in config.CADENA_MINUSCULAS):
 			minusculas_ok = True
 		
-		if (caracter in DIGITOS):
+		if (caracter in config.DIGITOS):
 			digitos_ok = True
 
-		if (caracter in CARACTERES_ESPECIALES):
+		if (caracter in config.CARACTERES_ESPECIALES):
 			especiales_ok = True
 
 	if (longitud_ok and mayusculas_ok and minusculas_ok and digitos_ok and especiales_ok):
 		clave_valida = True
 
 
-# Procesos, flujo principal, salidas
-print("SISTEMA INICIADO")
-solicitar_clave()
-verificar_clave()
+def mostrar_resultado():
+	if (clave_valida == True):
+		print("La clave ingresada es válida")
+	else:
+		print("La clave ingresada no es válida")
 
-if (clave_valida == True):
-	print("La clave ingresada es válida")
-else:
-	print("La clave ingresada no es válida")
+
+# Procesos, flujo principal, salidas
+# permite discernir si el script es ejecutado de forma directa o no
+if (__name__ == "__main__"):
+	print("SISTEMA INICIADO")
+	solicitar_clave()
+	verificar_clave()
+	mostrar_resultado()
