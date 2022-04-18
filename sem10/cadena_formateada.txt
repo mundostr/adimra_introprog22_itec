@@ -1,0 +1,2 @@
+Cadena de ejemplo: PEREZ, Jose, edad: 22, saldo: $ 358220.10 AR
+Esta es otra linea
