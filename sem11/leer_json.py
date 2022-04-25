@@ -1,7 +1,7 @@
 import json
 
 
-RUTA = "sem11/config.json"
+RUTA = "sem11/config_alt.json"
 
 
 def recuperarConfigJson(direccion):
