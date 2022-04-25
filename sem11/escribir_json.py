@@ -1,7 +1,7 @@
 import json
 
 
-RUTA = "sem11/config_alt.json"
+RUTA = "sem11/config_alt.json" # ruta relativa
 
 
 def guardarConfigJson(direccion, contenido):

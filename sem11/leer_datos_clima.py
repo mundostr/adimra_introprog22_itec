@@ -1,7 +1,7 @@
 import json
 
 
-RUTA = "sem11/config_alt.json" # path en inglés
+RUTA = "sem11/clima_rafaela.json" # path en inglés
 
 
 def recuperarConfigJson(direccion):
@@ -13,7 +13,10 @@ def recuperarConfigJson(direccion):
 
 def main():
 	CONFIG = recuperarConfigJson(RUTA)
-	print(CONFIG["id"])
+	print(CONFIG["weather"][0]["description"])
+	print(CONFIG["main"]["temp_min"])
+	print(CONFIG["main"]["humidity"])
+	print(CONFIG["main"]["pressure"])
 
 
 if (__name__ == "__main__"):
