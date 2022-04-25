@@ -1,0 +1,11 @@
+{
+    "id": 45,
+    "ciudad": "Rafaela",
+    "prov": "Santa Fe",
+    "codigo_postal": "2300",
+    "caracteres_minimos": 8,
+    "cadena_mayusculas": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "cadena_minusculas": "abcdefghijklmnopqrstuvwxyz",
+    "digitos": "0123456789",
+    "caracteres_especiales": "@#$&_-"
+}
