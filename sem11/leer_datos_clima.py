@@ -1,3 +1,8 @@
+"""
+https://api.openweathermap.org/data/2.5/weather?q=rafaela&units=metric&appid=b07cceb706b36724ddaa2614cdb76af4
+"""
+
+
 import json
 
 
