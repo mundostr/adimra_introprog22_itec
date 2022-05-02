@@ -1,0 +1,11 @@
+2022-04-27 16:44:39,106 [INFO] (logueo.py) var = 1
+2022-04-27 16:44:39,106 [INFO] (logueo.py) var = 2
+2022-04-27 16:44:39,106 [INFO] (logueo.py) var = 3
+2022-04-27 16:44:39,106 [INFO] (logueo.py) var = 4
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 5
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 6
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 7
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 8
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 9
+2022-04-27 16:44:39,107 [INFO] (logueo.py) var = 10
+2022-04-27 16:44:39,107 [ERROR] (logueo.py) Division por 0 en linea 26
