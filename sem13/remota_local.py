@@ -38,6 +38,7 @@ if (__name__ == "__main__"):
 	datos_clima = recuperar_remoto(RUTA_CLIMA, "json")
 
 	# if (datos_clima == False):
+	# if (not datos_clima): # también se puede expresar con negación: not datos_clima es equivalene a datos_clima == False
 	if (datos_clima is False): # el uso de "is" en estos casos es más adecuado que "=="
 		print("Error al recuperar info de clima")
 	else:
