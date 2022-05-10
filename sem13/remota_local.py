@@ -37,9 +37,9 @@ def guardar_backup_local(ruta, modo, contenido):
 if (__name__ == "__main__"):
 	datos_clima = recuperar_remoto(RUTA_CLIMA, "json")
 
-	if (datos_clima == False):
+	# if (datos_clima == False):
+	if (datos_clima is False): # el uso de "is" en estos casos es más adecuado que "=="
 		print("Error al recuperar info de clima")
 	else:
 		datos_clima_main = dict(datos_clima["main"])
 		guardar_backup_local(RUTA_CLIMA_LOCAL, "w", datos_clima_main)
-		
