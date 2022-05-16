@@ -12,9 +12,10 @@ Criterios:
 # 5) La clave debe tener al menos un caracter especial.
 """
 
-# Librerías y configs
-import config, string
+import string
 
+# Librerías y configs
+import config
 
 # Constantes y variables
 clave = "" # variable global
