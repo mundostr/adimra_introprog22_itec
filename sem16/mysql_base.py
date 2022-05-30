@@ -10,10 +10,19 @@ credenciales = mysql.connector.connect(
     database="adimra"
 )
 
+ID_SENSOR = 32
+
 
 def consultar_bbdd():
+    consulta = f"""
+        SELECT lecturas.id, lecturas.media, sensores.nombre
+        FROM lecturas, sensores
+        WHERE lecturas.id_sensor = {ID_SENSOR}
+        AND lecturas.id_sensor = sensores.id
+    """
+    
     conexion = credenciales.cursor()
-    conexion.execute("SELECT lecturas.id, lecturas.media, sensores.nombre FROM lecturas, sensores WHERE lecturas.id_sensor = 32 AND lecturas.id_sensor = sensores.id") # lenguage SQL
+    conexion.execute(consulta) # lenguage SQL
     resultado = conexion.fetchall()
     print(resultado)
 
